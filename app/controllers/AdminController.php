@@ -12,7 +12,7 @@ class AdminController extends BaseController{
 	public function __construct() {
 		//用内置filter验证登陆,token等
 		$this->beforeFilter('auth',array('except'=>array('dologin','login')));	
-		
+
 	}
 
 	/**
@@ -30,9 +30,9 @@ class AdminController extends BaseController{
 	public function dologin(){
 		$name=Input::get('name');
 		$password=Input::get('password');
-		// var_dump($name);exit;
+		$logged=Input::get('logged')?true:false;
 
-		if (Auth::attempt(array('name' => $name, 'password' => $password)))
+		if (Auth::attempt(array('name' => $name, 'password' => $password),$logged))
 		{
 		    	return Redirect::intended('admin/index');
 		}else{
