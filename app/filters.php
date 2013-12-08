@@ -35,7 +35,9 @@ App::after(function($request, $response)
 
 Route::filter('auth', function()
 {
-	if (Auth::guest()) return Redirect::guest('admin/login');
+	//注意这里加了一个条件验证identity字段是否为1,这是用于区分是否管理员，否则前台登陆可进后台
+	//因为我后台是用的这个filter来验证是否登陆
+	if (Auth::guest() || (Auth::user()->identity != 1)) return Redirect::guest('admin/login');
 });
 
 

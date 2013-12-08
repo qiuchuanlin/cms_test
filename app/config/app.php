@@ -39,7 +39,7 @@ return array(
 	|
 	*/
 
-	'timezone' => 'Etc/GMT-8',
+	'timezone' => 'PRC',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return array(
 	|
 	*/
 
-	'locale' => 'en',
+	'locale' => 'zh',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return array(
 	|
 	*/
 
-	'key' => 's9z4Tp4cF10APiKVwXQVMVrJchQO9HFE',
+	'key' => 'KC4ioHybNc63UzG4FG2r4rATiNclz8DJ',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -113,8 +113,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-		'Way\Generators\GeneratorsServiceProvider'
-
+		'Way\Generators\GeneratorsServiceProvider'			
 	),
 
 	/*
@@ -179,7 +178,8 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-
+		'Image'			  => 'App\Facades\ImageFacade',		//自定图片处理相关的Facade
+		'Verify'		  => 'App\Facades\VerifyFacade'		//验证码类Facade	
 	),
 
 );

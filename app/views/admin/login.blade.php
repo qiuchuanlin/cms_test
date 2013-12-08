@@ -54,9 +54,19 @@
 
         </div><!-- End #header -->
 
-    </div><!-- End .container-fluid -->    
+    </div><!-- End .container-fluid -->   
 
     <div class="container-fluid">
+        {{--detect if failed validate--}}
+        @if(Session::has('errorMsg'))
+            <script>alert("{{Session::get('errorMsg')}}")</script>
+        @endif
+                
+        {{--detect if there has had password reseted and successful--}}
+        @if(Session::has('successMsg'))
+            <script>alert("{{Session::get('successMsg')}}")</script>
+        @endif
+
 
         <div class="loginContainer">
             <form class="form-horizontal" action="{{url('admin/dologin')}}" id="loginForm" method="post">
@@ -67,7 +77,7 @@
                                 帐号:
                                 <span class="icon16 icomoon-icon-user right gray marginR10"></span>
                             </label>
-                            <input class="span12" id="username" type="text" name="name" />
+                            <input class="span12" id="username" type="text" name="name" value="{{Input::old('name')}}"/>
                         </div>
                     </div>
                 </div>
@@ -78,9 +88,9 @@
                             <label class="form-label span12" for="password">
                                 密码:
                                 <span class="icon16 icomoon-icon-lock right gray marginR10"></span>
-                                <span class="forgot"><a href="#">忘记密码?</a></span>
+                                <span class="forgot"><a href="{{url('admin/remind')}}">忘记密码?</a></span>
                             </label>
-                            <input class="span12" id="password" type="password" name="password"/>
+                            <input class="span12" id="password" type="password" name="password" value="{{Input::old('password')}}"/>
                         </div>
                     </div>
                 </div>
