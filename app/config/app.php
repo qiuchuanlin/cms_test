@@ -178,8 +178,10 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-		'Image'			  => 'App\Facades\ImageFacade',		//自定图片处理相关的Facade
-		'Verify'		  => 'App\Facades\VerifyFacade'		//验证码类Facade	
+		'Image'			  => 'App\Facades\ImageFacade',			//自定图片处理相关的Facade
+		'Verify'		  => 'App\Facades\VerifyFacade',		//验证码类Facade	
+		'CategoryFacade'  => 'App\Facades\Category',			//自定义category,主要方法移动分类,名字那么长,因为有category类,不能同名,否则把Eloquent给覆盖了.
+		'ReturnDate'	  => 'App\Facades\ReturnDateFacade'		//自定义批量处理时间
 	),
 
 );

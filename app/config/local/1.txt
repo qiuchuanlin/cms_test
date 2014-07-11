@@ -1,0 +1,1 @@
+a:4:{i:0;s:31:"http://cms/uploads/news/004.jpg";i:1;s:44:"http://cms/uploads/news/400x300_crop/004.jpg";i:2;s:44:"http://cms/uploads/news/160x120_crop/004.jpg";i:3;s:43:"http://cms/uploads/news/110x86_crop/004.jpg";}

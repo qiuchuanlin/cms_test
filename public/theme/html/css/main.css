@@ -436,7 +436,7 @@ body, p {font-family: 'Droid Sans', Helvetica, Arial, sans-serif;}
 	margin-left: 0px;
 }
 .controls label.checkbox {margin-left:-18px;}
-select {width: 150px;}
+select {width: 220px;}
 .form-actions {
 	border-bottom: 1px solid #E5E5E5;
 	-moz-box-shadow:0 1px 0px rgba(229, 229, 229, 0.1);

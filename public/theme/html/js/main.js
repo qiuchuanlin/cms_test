@@ -12,7 +12,7 @@ var supr_Options = {
 //load some plugins only if is needed
 Modernizr.load({
   test: Modernizr.placeholder,
-  nope: 'plugins/forms/placeholder/jquery.placeholder.min.js',
+  nope: '{{asset("theme/plugins/forms/placeholder/jquery.placeholder.min.js")}}',
   complete: function () {
 	//------------- placeholder fallback  -------------//
 	$('input[placeholder], textarea[placeholder]').placeholder();

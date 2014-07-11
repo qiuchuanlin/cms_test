@@ -20,12 +20,6 @@
     <link href="{{asset('theme/html/css/custom.css')}}" rel='stylesheet' type='text/css' />
     <!-- Text -->
     <link href="{{asset('theme/html/css/custom.css')}}" rel='stylesheet' type='text/css' /> 
-    <!--[if lt IE 9]>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Droid+Sans:400" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Droid+Sans:700" rel="stylesheet" type="text/css" />
-    <![endif]-->
 
     <!-- Core stylesheets do not remove -->
     <link id="bootstrap" href="{{asset('theme/html/css/bootstrap/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
@@ -159,6 +153,6 @@
     <!-- Init plugins -->
     <script type="text/javascript" src="{{asset('theme/html/js/main.js')}}"></script><!-- Core js functions -->
     <script type="text/javascript" src="{{asset('theme/html/js/dashboard.js')}}"></script><!-- Init plugins only for page -->
-    <script type="text/javascript" src="{{asset('theme/htmlplugins/timeentry/jquery.timeentry.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('theme/html/plugins/timeentry/jquery.timeentry.min.js')}}"></script>
     </body>
 </html>
